@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+<body>
+    <h1>Formulários HTML</h1>
+    <form>
+        <label for="nome">Nome</label> 
+        <br>
+        <input type="text" name="nome" id="nome" />
+        <br>
+        <label>Qual sua cor preferida?</label> 
+        <br>
+        <input type="color" name="cor" /> <br>
+
+        <!-- Inputs de Radio -->
+        <label>Estado Civil</label> <br>
+
+        <input type="radio" name="estado_civil" id="casado" value="Casado(a)" />
+        <label for="casado">Casado(a)</label> <br>
+
+        <input type="radio" name="estado_civil" id="solteiro" value="Solteiro(a)" />
+        <label for="solteiro">Solteiro(a)</label> <br>
+
+        <input type="radio" name="estado_civil" id="viuvo" value="Viúvo(a)" />
+        <label for="viuvo">Viúvo(a)</label> <br>
+        <!-- Fim de Inputs de Radio -->
+
+        <!-- Inputs de Checkbox -->
+        <label>Escolha suas linguagens:</label> <br>
+
+        <input type="checkbox" name="linguagens[]" value="HTML5" id="html" />
+        <label for="html">HTML5</label>
+        <br>
+        <input type="checkbox" name="linguagens[]" value="CSS3" id="css" />
+        <label for="css">CSS3</label>
+        <br>
+        <input type="checkbox" name="linguagens[]" value="JavaScript" id="js" />
+        <label for="js">JavaScript</label>
+
+        <br>
+
+        <!-- Select -->
+         <label for="cidade">Qual a sua cidade?</label>
+         <br>
+         <select name="cidade" id="cidade">
+            <option value="">Selecione a Cidade</option>
+            <option value="Aracoiaba">1 - Aracoiaba</option>
+            <option value="Fortaleza">2 - Fortaleza</option>
+            <option value="Morada Nova">3 - Morada Nova</option>
+         </select>
+        <br>
+
+        <!-- Textarea -->
+        <label for="mensagem">Mensagem</label> <br>
+        <textarea name="mensagem" id="mensagem" rows="10" cols="50"></textarea>
+
+        <br>
+
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+</html>
+
