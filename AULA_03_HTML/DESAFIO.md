@@ -57,51 +57,13 @@ Aqui está um exemplo básico de como a estrutura do HTML pode ser:
 </head>
 <body>
 
-    <h1>Listagem de Alunos</h1>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Idade</th>
-                <th>Turma</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>João Silva</td>
-                <td>15</td>
-                <td>9A</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Maria Souza</td>
-                <td>16</td>
-                <td>10B</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Carlos Oliveira</td>
-                <td>14</td>
-                <td>8C</td>
-            </tr>
-        </tbody>
-    </table>
-
     <h1>Cadastro de Novo Aluno</h1>
-    <form>
-        <label for="nome">Nome do Aluno:</label>
-        <input type="text" id="nome" name="nome" required><br><br>
+    <!-- Aqui fica o Formulário -->
 
-        <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade" required><br><br>
+    <h1>Listagem de Alunos</h1>
+    <!-- Aqui fica a Tabela -->
 
-        <label for="turma">Turma:</label>
-        <input type="text" id="turma" name="turma" required><br><br>
-
-        <button type="submit">Cadastrar Aluno</button>
-    </form>
+    
 
 </body>
 </html>
