@@ -7,10 +7,22 @@
 </head>
 <body>
     <h1>Formulários HTML</h1>
-    <form>
+    <!-- METODO: GET E POST -->
+    <form action="url" method="POST">
+        <input type="text" name="q" placeholder="Pesquise no Google">
+        <br>
         <label for="nome">Nome</label> 
         <br>
-        <input type="text" name="nome" id="nome" />
+        <input 
+            type="text" 
+            name="nome" 
+            id="nome" 
+            placeholder="Ex.: José Silva"
+            required
+        />
+        <br>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
         <br>
         <label>Qual sua cor preferida?</label> 
         <br>
@@ -19,13 +31,13 @@
         <!-- Inputs de Radio -->
         <label>Estado Civil</label> <br>
 
-        <input type="radio" name="estado_civil" id="casado" value="Casado(a)" />
+        <input type="radio" name="estado_civil" id="casado" value="Casado(a)" required  />
         <label for="casado">Casado(a)</label> <br>
 
-        <input type="radio" name="estado_civil" id="solteiro" value="Solteiro(a)" />
+        <input type="radio" name="estado_civil" id="solteiro" value="Solteiro(a)"/>
         <label for="solteiro">Solteiro(a)</label> <br>
 
-        <input type="radio" name="estado_civil" id="viuvo" value="Viúvo(a)" />
+        <input type="radio" name="estado_civil" id="viuvo" value="Viúvo(a)"/>
         <label for="viuvo">Viúvo(a)</label> <br>
         <!-- Fim de Inputs de Radio -->
 
@@ -56,7 +68,7 @@
 
         <!-- Textarea -->
         <label for="mensagem">Mensagem</label> <br>
-        <textarea name="mensagem" id="mensagem" rows="10" cols="50"></textarea>
+        <textarea name="mensagem" id="mensagem" rows="10" cols="50" placeholder="Sua mensagem" ></textarea>
 
         <br>
 
