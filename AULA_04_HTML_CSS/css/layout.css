@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* https://dontpad.com/fs21 */
+/* https://dontpad.com/fs21/codigo */
+header {
+    height: 100px;
+    background-color: #ccc;
+    color: #FFF;
+
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+#logo img {
+    height: 100%;
+}
+#logo {
+    width: 20%;
+}
+#menu {
+    width: 80%;
+}
+
+#banners {
+   display: flex; 
+}
+.image-b {
+    width: 33.33%;
+}
+#banner {
+    width: 100%;
+}
+
+#banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    height: 150px;
+    background-color: #444;
+    color: white;
+    border: 3px solid yellow;
+    margin: 100px 15px 10px 20px;
+    /* top, right, bottom, left */
+    padding: 10px 20px 20px 30px;
+}
