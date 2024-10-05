@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('../images/background.jpg');
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page {
+    background-color: rgba(0,0,0,0.6);
+    height: 100vh;
+}
+
+header {
+    width: 80%;
+    /* background-color: red; */
+    height: 90px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    height: 100px;
+}
+
+/* MENU */
+#menu nav ul {
+    display: flex;
+    gap: 30px;
+}
+#menu nav ul li {
+    list-style: none;
+    /* margin: 10px; */
+}
+#menu nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background 500ms, color 500ms, border 250ms;
+    padding: 7px 10px;
+    border-radius: 10px 0px 10px 0px;
+}
+
+#menu nav ul li a:hover {
+    background-color: #537900;
+    color: white;
+}
+
+#menu ul li a.ativo {
+    background-color: #537900;
+    color: white;
+}
+
+
+@keyframes animacaoCimaBaixo {
+    /* from {bottom: 50px;}
+    to {bottom: 80px;} */
+    0% {bottom: 50px;}
+    50% {bottom: 80px;}
+    100% {bottom: 50px;}
+}
+/* WHATSAPP */
+#whatsapp {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    animation: animacaoCimaBaixo 2s infinite;
+}
+#whatsapp:hover {}
+#whatsapp img {
+    height: 80px;
+}
+
+#conteudo {
+    width: 80%;
+    margin:  0 auto;
+    padding: 20px;
+}
+#conteudo h1 {
+    color: white;
+    font-size: 4em;
+    font-family: "Playwrite PE", cursive;
+}
