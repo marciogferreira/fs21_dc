@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+:root {
+    --yellow: rgba(47, 236, 79, 0.886);
+    --cor1: rgb(221, 133, 19);
+    --cor2: rgb(229, 185, 27);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.rubik-iso-regular {
+    font-family: "Rubik Iso", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+header {
+    background-color: red;
+    color: white;
+    height: 150px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo {
+    width: 20%;
+    background-color: var(--yellow);
+}
+#menu span {
+    font-size: 3em;
+}
+#cards {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+#cards div {
+    text-align: center;
+    width: 33.33%;
+    background-color:  var(--yellow);
+}
+/* MOBILE - 0px a 360px */
+@media screen and (max-width: 360px) {
+    body {
+        background-color: black;
+    }
+    header {
+        flex-direction: column;
+    }
+
+    #cards {
+        flex-direction: column;
+    }
+    #cards div {
+        width: 100%;
+    }
+}
+/* TABLET */
+@media screen and (min-width: 361px) and (max-width: 768px) {
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE */
+/* @media screen and (min-width: 0px) and (max-width: 480px) {
+    body {
+        background-color: black;
+    }
+} */
