@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Repetição - For</title>
+</head>
+<body>
+    <script>
+        // ESTRUTURA DE REPETIÇÃO - FOR
+        let contador = 1
+        // for(inicial; condicao; incremento) 
+        for(contador; contador <= 10; contador++) {
+            // Bloco de Repetição
+            const restoDivisao = contador % 2;
+            // IF TERNÁRIO
+            const texto = restoDivisao === 0 ? "É par" : "É ímpar";
+
+            if(restoDivisao === 0) {
+                // Template String
+                document.write(`<h3>Digital College - ${contador} - ${texto}</h3>`)
+            }
+        }
+        // CRIE UM PROGRAMA QUE EXIBA NA TELA OS NUMEROS DE 1 A 1000
+        // UTILIZE O FOR E O DOCUMENT.WRITE.
+        // EXIBA APENAS OS NUMEROS IMPARES
+
+        // CRIE UM PROGRAMA QUE RECEBA 5 NOMES DO USUARIO
+        // E EXIBA TODOS OS NOMES NO DOCUMENT.WRITE
+        // USANDO O FOR
+
+
+    </script>
+</body>
+</html>

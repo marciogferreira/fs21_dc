@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Condicional IF e ELSE</title>
+</head>
+<body>
+    <script>
+        // OPERADORES DE COMPARACAO
+        let idade = '19'
+        let codicao = idade == 19 // true Comparar Valor e Não compara tipo
+        codicao = idade === 19 // false -  Comparar Valor e compara tipo
+        codicao = idade != 19 // false
+        codicao = idade !== 19 // true
+        codicao = idade > 18 // true
+        codicao = idade < 18 // false
+        condicao = idade >= 19 // true
+        condicao = idade <= 18 // false
+
+        // let senha = prompt("Qual a sua senha?")
+        // if(senha === '123123') {
+        //     // BLoco de Codigo Executa
+        //     alert("Senha Correta")
+        // } else {
+        //     // Bloco de Codigo Executa caso a condição seja falsa
+        //     alert("Senha incorreta")
+        // }
+
+        
+        // E = AND = &&
+        // OU = OR = ||
+        let login = 'admin'
+        let senha = '123'
+        if(login == 'admin' && senha == '123') {
+            alert("Logado com Sucesso")
+        } else {
+            alert("Login ou Senha Incorretos")
+        }
+
+        //
+        let imc = 24;
+        if(imc >= 15 && imc <= 18.5) {
+            alert("Abaixo do Peso")
+        } else if(imc > 18.5 && imc <= 24.9) {
+            
+        } else {
+            alert("Resultado Final")
+        }
+
+        // OU - OR - || 
+        // VALIDAÇÃO PARA USAR BRINQUEDO NO PARQUE
+        if(idade > 17 || altura >= 1.60) {
+            console.log("Liberado")
+        } else {
+            console.log("Não Liberado")
+        }
+
+
+        // SWITCH - ESCOLHA
+        let sexo = 'M'
+        switch(sexo) {
+            case 'M':
+                console.log("Masculino")
+                break;
+            case 'F':
+                console.log("Feminino")
+                break;
+            default:
+                console.log("Sexo Inválido")
+                break;
+        }
+
+    </script>
+</body>
+</html>
