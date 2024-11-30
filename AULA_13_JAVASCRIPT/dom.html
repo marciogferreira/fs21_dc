@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom - Document Object Model</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="tema()">Mudar Tema</button>
+    <button onclick="temaDark()">Tema Dark</button>
+    <button onclick="temaLight()">Tema Light</button>
+    <h2>Aula de JS - Funções e Dom</h2>
+    
+    <script>
+        
+
+        let temaDefault = 'light';
+        
+        function temaDark() {
+            const pagina = document.querySelector('body')
+            pagina.style.background = 'black'
+            pagina.style.color = 'white'
+        }
+
+        function temaLight() {
+            const pagina = document.querySelector('body')
+            pagina.style.background = 'white'
+            pagina.style.color = 'black'
+        }
+        
+        function tema() {
+            if(temaDefault === 'light') {
+                temaDefault = 'dark';
+                temaDark();
+            } else {
+                temaDefault = 'light';
+                temaLight();
+            }
+        }
+    </script>
+</body>
+</html>

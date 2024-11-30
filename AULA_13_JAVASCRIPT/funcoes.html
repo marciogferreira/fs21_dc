@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+        // FUncao é um Trecho de codigo que pode ser executado quando for
+        // chamada
+
+        // Funcao Simples
+        function nomeSimples() {
+            // Trecho de Código
+            const valor1 = Number(prompt('Digite v1'))
+            const valor2 = Number(prompt('Digite v2'))
+            const total = valor1 + valor2
+            alert(`O resultado da soma é: ${total}`)
+        }
+        nomeSimples()
+
+        // Funcao com Parametro
+        function calculaIMC(peso, altura) {
+            const imc = peso / (altura * altura)
+            alert("IMC " + imc)
+        }
+
+        calculaIMC(107, 1.79)
+
+
+        // Crie uma função que receba base e altura, calcule a área do triângulo e
+        // exiba o resultado.
+        function calculaArea(base, altura) {
+            const area = (base * altura) / 2
+            alert("O Valor da Área é: " + area)
+        }
+        calculaArea(10, 12.4)
+        
+        // Funcoes com Retorno
+        function calculaAreaRetorno(base, altura) {
+            const area = (base * altura) / 2
+            return area
+        }
+        const area = calculaAreaRetorno(10, 12.4)
+        document.write(`Valor da área é ${area}`)
+
+        // Funções de Seta - Arrow Function
+        const somaDoisNumeros = (v1, v2) => v1 + v2
+        const total = somaDoisNumeros(10, 20)
+        const texto = "Texto Simples"
+
+        console.log(typeof somaDoisNumeros)
+        console.log(typeof total)
+        console.log(typeof texto)
+        
+    </script>
+</body>
+</html>
