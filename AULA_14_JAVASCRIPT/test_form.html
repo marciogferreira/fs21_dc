@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://airform.io/profhaeliomarcio@gmail.com" method="post">
+        <input type="text" id="nome" name="name" placeholder="Seu Nome">
+        <textarea name="message" id="mensagem" placeholder="Sua Mensagem"></textarea>
+        <button>Enviar</button>
+    </form>
+    
+
+    <script>
+        const form = document.querySelector('form')
+        form.addEventListener('submit', function(event) {
+            const campoEmail = document.getElementById('nome')
+            const campoMensagem = document.getElementById('mensagem')
+
+            if(campoEmail.value === '') {
+                alert('Preencha o campo nome.')
+                event.preventDefault()
+                return
+            }
+            
+            if(campoMensagem.value === '') {
+                alert('Preencha o campo mensagem.')
+                event.preventDefault()
+                return
+            }
+
+
+            
+            // continue
+        });
+    </script>
+
+</body>
+</html>

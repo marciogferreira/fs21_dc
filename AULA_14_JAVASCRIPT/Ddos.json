@@ -1,0 +1,57 @@
+{
+  "level1": {
+    "array1": [
+      {
+        "level2": {
+          "array2": [
+            {
+              "level3": {
+                "array3": [
+                  {
+                    "level4": {
+                      "array4": [
+                        {
+                          "level5": {
+                            "array5": [
+                              {
+                                "level6": {
+                                  "array6": [
+                                    {
+                                      "level7": {
+                                        "array7": [
+                                          {
+                                            "level8": {
+                                              "array8": [
+                                                {
+                                                  "level9": {
+                                                    "array9": [
+                                                      {
+                                                        "level10": "End of nesting"
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

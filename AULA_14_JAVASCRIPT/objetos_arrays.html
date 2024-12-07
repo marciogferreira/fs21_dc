@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Objetos
+        const pessoa = {
+            nome: 'Marcio',
+            idade: 28,
+            cidade: 'São Paulo',
+            profissao: 'Desenvolvedor Front-End',
+            e_casado: true,
+            endereco: {
+                rua: 'Rua das Flores',
+                numero: 123,
+                bairro: 'Jardim dos Comerciários',
+                cidade: 'São Paulo',
+                estado: 'SP'
+            }
+        }
+        // Acessando valores do objeto
+        console.log(pessoa.nome); // Marcio
+        console.log(pessoa.idade); // 28
+        console.log(pessoa.cidade); // São Paulo
+        console.log(pessoa.profissao); // Desenvolvedor Front-End
+        console.log(pessoa['idade']); // 28
+        pessoa.idade = 30
+        console.log(pessoa.idade); // 30
+
+        // JSON - Javascript Object Notation
+        
+        // Arrays - Dados Compostos
+        const alunos = ["Marcos", "Ana", "Jose"]
+        const numeros = [12, 20, 45, 85, 95, 65]
+        // Acessando o nome Marcos
+        console.log(alunos[0]); // Marcos
+        console.log(alunos[1]); // Ana
+        alunos[0] = "Maycon";
+        // const matriz = Array('Max', 'Max2')
+        const matriz = [
+            ['Ana', 'Marcos', 'Jose'],
+            ['Alves', 'Sousa', 'Ferreira']
+        ]
+
+        console.log(matriz[0][0]) // Ana
+        console.log(matriz[1][2]) // Ferreira
+
+        // Arrays com Objetos   
+        const pessoas = [
+            {
+                nome: 'Marcos',
+                idade: 28
+            },
+            {
+                nome: 'Ana',
+                idade: 25
+            }
+        ]
+        const p1 = pessoas[0]
+        console.log(p1.nome)
+        pessoas[1].nome
+
+
+        // Pessoas
+        const colaborador = {
+            nome: "Francisco",
+            idade: 45,
+            endereco: {
+                rua: "Rua dos Bandeirantes",
+                numero: 250,
+            },
+            dependente: [
+                {
+                    nome: 'Maria',
+                    idade: 2
+                },
+                {
+                    nome: 'João',
+                    idade: 5
+                }
+            ],
+            cumprimentar: function() {
+                console.log(`Olá, meu nome é ${this.nome}!`)
+            }
+        }
+
+    </script>
+</body>
+</html>
