@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const objeto = {
+            nome: "John Doe",
+            idade: 30,
+            endereco: {
+                rua: "Av. Paulista",
+                numero: 123,
+                cidade: "São Paulo",
+                estado: "SP"
+            }
+        }
+        
+        console.log(objeto.nome)
+        console.log(objeto.endereco.rua)
+
+        const lista_alunos = ["Ana", "Mario", "Alice", "Bob", "John"]
+        const lista_mista = [10, 1.5, "String", true, undefined]
+        // ARRAYS SEMPRE INICIA NA POSIÇÃO 0 ZERO
+        console.log(lista_alunos[0])
+
+        // METODOS(FUNÇÕES) DE ARRAYS
+        // TAMANHO DO ARRAY
+        const tamanho = lista_alunos.length
+        console.log(tamanho)
+
+        // ADICIONAR NOVO ELEMENTO NO INICIO DO ARRAY
+        lista_alunos.unshift("Eduardo")
+        
+        // REMOVENDO ELEMENTO NO INICIO DO ARRAY
+        lista_alunos.shift() // eduardo
+       
+        // ADICIONANDO NO FINAL DA LISTA
+        lista_alunos.push("Douglas")
+        
+        // REMOVENDO NO FINAL DA LISTA
+        lista_alunos.pop() // Douglas
+        // ["Ana", "Mario", "Alice", "Bob", "John"]
+        // SPLICE - ADICIONANDO EM QUALQUER POSICAO E REMOVENDO EM QUALQUER POSICAO
+        // 2 É O INDICE
+        // 1 É O NUMERO DE ELEMENTOS QUE VAMOS REMOVER
+        lista_alunos.splice(2, 1)
+        // ["Ana", "Mario", "Bob", "John"]
+        // ADICIONANDO ELEMENTOS EM QUALQUER POSICAO
+        lista_alunos.splice(1, 0, "Roberto")
+        document.write(lista_alunos)
+
+        const alunos = [];
+        alunos.push({ nome: "Ana", idade: 18 });
+        alunos.push({})
+
+    </script>
+</body>
+</html>

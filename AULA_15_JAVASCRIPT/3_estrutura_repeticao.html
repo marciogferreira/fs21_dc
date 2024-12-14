@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ESTRUTURA DE REPETIÇÃO
+        
+        let contador = 0
+        for(contador; contador <= 10; contador++) {
+            document.write(contador + " - For Executando...<br /> " )
+        }        
+        // CRIE UM FOR PARA IMPRIMIR OS NUMEROS DE 0 A 1000
+        for(let i = 2000; i > 0; i-- ) {
+            if(i % 2 == 0) {
+                document.write(i + "<br />")
+            }
+        }
+
+        // PERCORRENDO ARRAYS
+        const alunos = ["Ana", "Alan", "Vitoria", "Mauris"]
+        
+        for(let i = 0; i < 4; i++) {
+            document.write("Posicao " + i)
+            document.write(" - Aluno: " + alunos[i] + "<br />")
+        }
+
+        const pessoas = [
+            {nome: "Ana", idade: 25},
+            {nome: "Alan", idade: 30},
+            {nome: "Vitoria", idade: 28}
+        ]
+        for(let i = 0; i < pessoas.length; i++) {
+            const aux = pessoas[i]
+            document.write("Nome: " + aux.nome)
+            document.write(" - Idade: " + aux.idade + "<br />")
+        }
+
+        document.write("<br />")
+        document.write("<br />")
+        document.write("<br />")
+        document.write("<br />")
+        document.write("<br />")
+        document.write("<br />")
+        document.write("<br />")
+        
+
+
+        
+
+    </script>
+</body>
+</html>
