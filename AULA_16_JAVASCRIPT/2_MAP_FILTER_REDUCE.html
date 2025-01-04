@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map, Filter e Reduce</title>
+</head>
+<body>
+    <h1>Map</h1>
+    <form action="">
+        <input type="text" id="aluno">
+        <button type="button" onclick="adicionarAluno()">Adicionar Aluno</button>
+    </form>
+    <div id="alunos"></div>
+    <script>
+        // https://dontpad.com/fs21
+        const alunos = ["Ana", "Joao", "Jose"]
+        // MAP
+        const divAlunos = document.querySelector('#alunos')
+        
+        function listarAlunos() {
+            divAlunos.innerHTML = ''
+            alunos.map((item, index) => {    
+                divAlunos.innerHTML += `
+                    Posicao: ${index} - Nome: ${item} <br />
+                `
+            })
+
+            const alunosAlterados = alunos.map((aluno, index) => {
+                return `${aluno} Sousa`
+            })
+            console.log(alunosAlterados);
+        }
+
+        listarAlunos()
+
+        function adicionarAluno() {
+            const campoAluno = document.querySelector('#aluno')
+            const nome = campoAluno.value
+            alunos.push(nome)
+            campoAluno.value = ''
+            listarAlunos()
+        }
+
+        // FILTER
+        const frutas = ["Maça", "Banana", "Laranja"]
+        const frutasFiltradas = frutas.filter((fruta, index) => {
+            if(fruta.length > 4) {
+                return fruta
+            }
+        })
+
+        console.log(frutasFiltradas)
+
+
+        // REDUCE
+    </script>
+</body>
+</html>

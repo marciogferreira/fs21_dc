@@ -1,0 +1,33 @@
+MODULO:
+JAVASCRIPT
+
+OBJETIVOS:
+- ARRAYS E OBJETOS
+- ESTRUTURA DE REPETIÇÃO
+ - FOR
+ - WHILE
+ - FOREACH
+ - MAP
+ - FILTER
+ - REDUCE
+
+- JSON.STRINGIFY - CONVERT OBJECT TO JSON
+- JSON.PARSE - CONVERT JSON TO OBJECT
+- LOCAL STORAGE - https://www.w3schools.com/js/js_api_web_storage.asp
+
+DOCUMENTAÇÃO:
+
+JSON. OBJECT
+https://www.w3schools.com/js/js_json_objects.asp
+
+JSON.PARSE
+https://www.w3schools.com/js/js_json_parse.asp
+
+JSON.SRINGIFY
+https://www.w3schools.com/js/js_json_stringify.asp
+
+- LOCAL STORAGE
+https://www.w3schools.com/js/js_api_web_storage.asp
+
+
+

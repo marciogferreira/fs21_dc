@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Repetição</title>
+</head>
+<body>
+    <script>
+        // https://dontpad.com/fs21
+        const lista = [
+            "Ana", "Marcos", "André", "Alex"
+        ]
+
+        for(let indice = 0; indice < lista.length; indice++) {
+            document.write(lista[indice] + "< />");
+        }
+
+        for(let indice = 0; indice < 10; indice++) {
+            document.write(indice + "<br />")
+        }
+
+
+
+
+        // WHILE - ENQUANTO
+        let entrada = '';
+        // while(entrada != 'sair') {
+            // Bloco de Código
+            // entrada = prompt('Digite algo ou "sair" para sair: ');
+            // document.write(entrada + "<br />");
+        // }
+
+
+        let contador = 0
+        while(contador < lista.length) {
+            document.write(lista[contador] + "<br />");
+            contador++;
+        }
+
+        const carros = ["Onix", "Prisma", "Argo", "Tracker", "Pulse", "Celta"]
+        // FOREACH
+        document.write("Lista de Carros <br />")
+        
+       
+        
+        carros.forEach((valor, indice, array) => {
+            document.write(indice + " - ")
+            document.write(valor + " - ")
+            document.write(array + " - ")
+            document.write("<br />")
+        });
+
+        carros.forEach(() => {})
+        carros.forEach((valor, indice) => {
+            // Bloco de Codigo
+        })
+
+      
+
+
+
+    </script>
+</body>
+</html>

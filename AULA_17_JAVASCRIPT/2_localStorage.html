@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="adicionarItem()">Adicionar Item</button>
+    <button onclick="consultarItem()">Exibir Item</button>
+    <button onclick="excluirItem()">Excluir Item</button>
+    <a href="3_localStorage.html">Outra Página</a>
+    <script>
+        function adicionarItem() {
+            const valor = prompt("Digite um item:")
+            localStorage.setItem('DigitalItem', valor)
+        }
+
+        function consultarItem() {
+            const valor = localStorage.getItem("DigitalItem")
+            alert("Item: " + valor)
+        }
+
+        function excluirItem() {
+            localStorage.removeItem("DigitalItem")
+            consultarItem()
+        }
+       
+    </script>
+</body>
+</html>

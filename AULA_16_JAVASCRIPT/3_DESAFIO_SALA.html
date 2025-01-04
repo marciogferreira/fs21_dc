@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <form action="">
+        <input type="text" id="nome" class="form-control" placeholder="Nome">
+        <input type="text" id="email" class="form-control" placeholder="E-mail">
+        <button type="button" onclick="adicionarAluno()" class="btn btn-primary">Adicionar</button>
+    </form>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Posicao</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="alunos">
+            
+        </tbody>
+    </table> 
+    <script>
+        const alunos = [
+            {
+                nome: 'Aluno 1',
+                email: 'aluno1@example.com'
+            },
+            {
+                nome: 'Aluno 2',
+                email: 'aluno2@example.com'
+            },
+            //... adicionar mais alunos aqui     
+        ];
+
+       function listarDados() {
+            const tabela = document.querySelector('#alunos')
+            tabela.innerHTML = '';
+            alunos.map((item, indice) => {
+                tabela.innerHTML += `
+                    <tr>
+                        <td>${indice}</td>
+                        <td>${item.nome}</td>
+                        <td>${item.email}</td>
+                        <td>
+                            Editar - Excluir
+                        </td>
+                    </tr>
+                `
+            })
+       }
+
+       function adicionarAluno() {
+            const nome = document.querySelector('#nome').value;
+            const email = document.querySelector('#email').value;
+            const aluno = {
+                nome: nome,
+                email: email
+            }
+            alunos.push(aluno)
+
+            document.querySelector('#nome').value = '';
+            document.querySelector('#email').value = '';
+            listarDados();
+       }
+       listarDados()
+    </script>
+</body>
+</html>
