@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form action="">
+                    <h1>Consulta de CEP</h1>
+                    <div class="mb-3">
+                        <input type="text" id="cep" class="form-control" placeholder="Informe o CEP" maxlength="8" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="getCep(document.getElementById('cep').value)">Consultar</button>
+                </form>
+                <div class="mt-3" id="resposta"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script>
+        async function getCep(cep) {
+            try {
+
+                if(cep.length === 0) {
+                    throw new Error('Cep Obrigatório.')
+                }
+
+                if(cep.length < 8) {
+                    throw new Error('Cep Inválido. Informe o CEP completo com 8 digitos.')
+                }
+
+                if(cep.length > 8) {
+                    throw new Error('Cep Inválido. Informe o CEP com apenas 8 digitos.')
+                }
+
+                const dados = await axios.get(`https://viacep.com.br/ws/${cep}/json`)
+                
+                if(dados.data.erro) {
+                    throw new Error('Cep não encontrado.')
+                }
+                const endereco = dados.data
+
+                document.querySelector("#resposta").innerHTML = `
+                    <div class="alert alert-success" role="alert">
+                        <ul>
+                            <li>${endereco.logradouro}</li>
+                            <li>${endereco.bairro}</li>
+                        </ul>
+                    </div>
+                `
+            } catch(error)  {
+                // alert(error.message)
+                document.querySelector("#resposta").innerHTML = `
+                    <div class="alert alert-danger" role="alert">
+                        ${error.message}
+                    </div>
+                `
+            } finally {
+            }
+        }
+
+
+
+
+        // https://openweathermap.org/guide
+
+        // ESTUDAR:
+        // BIBLIOTECA AXIOS
+        // ASYNC AND AWAIT
+        // TRY ... CATCH
+        // VIACEP API
+    
+    </script>
+</body>
+</html>

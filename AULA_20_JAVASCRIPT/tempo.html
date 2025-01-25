@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="cidade" placeholder="Digite a cidade">
+    <button onclick="getTempo(document.getElementById('cidade').value)">Buscar</button>
+    <div id="resposta"></div>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script>
+        
+        // https://www.weatherapi.com/
+        
+        async function getTempo(cidade) {
+            try {
+                const key = 'e176c824b5a44aeeb01202307251801'
+                const url = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${cidade}`
+
+                const resposta = await axios.get(url);
+                const dados = JSON.stringify(resposta.data)
+                document.getElementById('resposta').innerHTML = dados;
+            } catch(error) {
+                document.getElementById('resposta').innerHTML = error.message;
+            }
+        }
+    </script>
+</body>
+</html>
