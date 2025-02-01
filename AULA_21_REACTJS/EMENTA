@@ -1,0 +1,17 @@
+
+
+COMANDOS:
+npm create vite@latest
+Nome do Projeto: projeto-react
+Selecione: React
+Selecione: JavaScript
+
+-----------------------
+cd nome_da_pasta
+npm install
+npm run dev
+
+----------------------
+Buildando o Projeto
+
+npm run build

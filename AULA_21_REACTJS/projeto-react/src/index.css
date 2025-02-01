@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    color: white;
+}
+#topo {
+    background-color: rgb(8, 8, 64);
+}
+
+#mando_aqui {
+    width: 70%;
+    margin: 0 auto;
+}
