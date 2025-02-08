@@ -1,0 +1,28 @@
+MODULO: REACTJS
+
+OBJETIVOS:
+- INSTALAÇÃO DE NOVO PROJETO
+- CONFIGURAÇÕES BÁSICAS
+- CRIAÇÕES DE COMPONENTES
+- PASSAGEM DE PROPS
+- PASSAGEM DE CHILDREN
+
+EXERCÍCIO EM SALA:
+- CRIAR UM SITE COM COMPONENTES DO REACTJS
+7
+
+COMANDOS:
+npm create vite@latest
+Selecione: ReactJs
+Selecione: JavaScript
+
+cd nome_projeto
+npm install
+npm run dev
+
+
+// BIBLIOTE DE ROTAS -
+
+npm install react-router-dom
+
+
