@@ -1,8 +1,9 @@
+import Menu from './Menu'
 function Header(props) {
     return (
-        <header>
+        <header className="bg-dark text-white vh-50 p-4">
             {props.nome} - {props.mensagem}
-            <h2>Header</h2>
+            <Menu />
             {props.children}
         </header>
     )
