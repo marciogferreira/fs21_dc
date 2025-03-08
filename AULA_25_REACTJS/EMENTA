@@ -1,0 +1,14 @@
+MODULO: REACTJS
+
+OBJETIVOS:
+- USESTATE
+- USEEFFECT
+- FETCH
+- API
+- PROTOCOLO HTTP
+- MÉTODOS HTTP GET, POST, PUT E DELETE.
+
+
+npm install react-router-dom
+npm install styled-components
+npm install react-bootstrap bootstrap
