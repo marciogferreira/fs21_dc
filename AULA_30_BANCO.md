@@ -4,7 +4,7 @@ ATIVIDADE PARA CASA:
 3. CRIAR TABELAS E INSERIR DADOS.
 
 SEGUE COMANDOS:
-´´´
+```
 CREATE DATABASE fs21;
 
 CREATE TABLE alunos(
@@ -39,8 +39,7 @@ CREATE TABLE turmas(
     professor_id integer,
     FOREIGN KEY(professor_id) REFERENCES professores(id)
 );
-
-´´´
+```
 
 ATIVIDADE:
 INSIRA DOIS alunos
