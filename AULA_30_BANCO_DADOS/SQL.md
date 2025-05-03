@@ -1,4 +1,3 @@
-Claro! Aqui está uma explicação clara e didática sobre os conceitos solicitados — **entidades, domínios, tipos de domínio no PostgreSQL, criação de tabelas** e **categorias de comandos SQL (DDL, DQL, etc.)**. Depois, posso montar isso como slides Reveal.js se desejar.
 
 ---
 
@@ -121,5 +120,3 @@ BEGIN, COMMIT, ROLLBACK
 ```
 
 ---
-
-Se quiser, posso transformar todo esse conteúdo em uma apresentação Reveal.js. Deseja que eu converta isso em slides HTML?

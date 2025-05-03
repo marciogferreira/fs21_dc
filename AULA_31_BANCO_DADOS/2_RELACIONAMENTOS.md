@@ -1,4 +1,4 @@
-Claro! Vamos revisar os **relacionamentos de banco de dados**, que são fundamentais para modelar como **entidades se conectam** entre si.
+
 
 ---
 
@@ -104,5 +104,3 @@ CREATE TABLE aluno_disciplina (
 * **Atributos próprios** (ex: nota no relacionamento entre aluno e disciplina)
 
 ---
-
-Se quiser, posso transformar isso em uma apresentação Reveal.js ou incluir diagramas ER para facilitar a visualização. Deseja que eu monte esses slides em HTML agora?

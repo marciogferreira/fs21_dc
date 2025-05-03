@@ -1,4 +1,4 @@
-Claro! Vamos abordar **conexão com banco de dados**, explicando o conceito, componentes principais e exemplos práticos (como em PostgreSQL). Isso é essencial para qualquer aplicação interagir com um banco.
+
 
 ---
 
@@ -86,5 +86,3 @@ await client.connect();
 * Use **pools de conexões** em aplicações com alto volume de acesso.
 
 ---
-
-Se quiser, posso adicionar isso como um novo slide Reveal.js. Deseja que eu crie um slide HTML com esses tópicos?

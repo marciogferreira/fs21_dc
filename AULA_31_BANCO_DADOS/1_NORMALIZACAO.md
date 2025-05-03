@@ -1,4 +1,3 @@
-Claro! A seguir estão as **formas normais da normalização de banco de dados**, que são regras aplicadas ao design de tabelas para **eliminar redundância**, **melhorar integridade** e facilitar a manutenção dos dados.
 
 ---
 
@@ -102,5 +101,3 @@ Funcionario (id, nome, id_departamento, nome_departamento)
 * Todos os tipos de restrições (de chave, domínio e negócio) são aplicadas **somente com base em domínios e chaves**.
 
 ---
-
-Quer que eu converta essas normalizações em um slide Reveal.js também?

@@ -1,4 +1,3 @@
-Ótimo tema! Vamos falar sobre **ORM (Object-Relational Mapping)** no contexto de **JavaScript**, especialmente em aplicações com Node.js.
 
 ---
 
@@ -90,5 +89,3 @@ const Cliente = sequelize.define('Cliente', {
 | Mais abstração             | Mais verboso, mas direto     |
 
 ---
-
-Se quiser, posso transformar isso em slides Reveal.js também. Quer que eu gere esse slide agora?
