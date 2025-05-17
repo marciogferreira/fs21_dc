@@ -1,0 +1,6 @@
+O COMANDO ABAIXO CRIA O ARQUIVO PACKAGE.json
+npm init -y
+
+::INSTALANDO AS DEPENDENCIAS DO PROJETO
+npm i sequelize 
+npm i pg pg-hstore
